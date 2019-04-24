@@ -15,7 +15,6 @@ public class DeclareVariable {
 		
 		char gender;
 		gender = 'A';
-		System.out.println(gender);
 		
 	}
 
