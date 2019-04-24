@@ -77,12 +77,6 @@ public class DeclareVariable {
 		System.out.println(msg2);
 		msg2 = 19 + 1 + "살 유병승!";
 		System.out.println(msg2);
-		
-		
-		String name="유병승";
-		int age=19;
-		String address="경기도 시흥시 ";
-		System.out.println("나는 "+name+" 이다 내 나이는 "+age+"살 이고,"+address+"에 살고 있습니다.");
 
 	}
 }
