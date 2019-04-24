@@ -37,9 +37,6 @@ public class DeclareVariable {
 		
 		num = 90000;
 		System.out.println(num);
-		
-		lnum = 900000000000000000L;
-		System.out.println(lnum);
 
 	}
 
