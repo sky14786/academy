@@ -5,8 +5,6 @@ public class DeclareVariable {
 		boolean flag;
 		flag = true;
 		flag = false;
-		
-		System.out.println(flag);
 	}
 
 }

@@ -13,6 +13,6 @@ public class Run {
 		int age;
 		// 같은 중괄호 범위 안에 같은 변수명은 설정할 수 없다.
 		new DeclareVariable().addValue();
-		
+
 	}
 }
