@@ -40,13 +40,6 @@ public class DeclareVariable {
 		
 		lnum = 900000000000000000L;
 		System.out.println(lnum);
-		
-		//½Ç¼ö
-		//float, double 
-		float fnum;
-		double dnum;
-		fnum = 180.5f;
-		System.out.println(fnum);
 
 	}
 

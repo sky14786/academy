@@ -46,7 +46,7 @@ public class DeclareVariable {
 		float fnum;
 		double dnum;
 		fnum = 180.5f;
-		System.out.println(fnum);
+		System.out.prtinln(fnum);
 
 	}
 
