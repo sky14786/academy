@@ -62,23 +62,20 @@ public class DeclareVariable {
 //		System.out.println(num * 70);
 //		System.out.println(num * 80);		
 //		상수의 선언 및 대입
-
+		
 		final int AGE;
-		AGE = 19;
+		AGE=19;
 		System.out.println(AGE);
-
+		
 		String msg2 = "안녕! 나는 김준영이야.";
 		System.out.println(msg2);
 		msg2 = new String("안녕 난 준영이야");
-		// 문자열에서 + 기호는 연결연산으로 사용
-		msg2 = "유병승은" + 19 + "살 입니다.";
+		//문자열에서 + 기호는 연결연산으로 사용
+		msg2 = "유병승은"+19+"살 입니다.";
 		System.out.println(msg2);
-		msg2 = "유병승은" + 19 + 1 + "살입니다.";
+		msg2="유병승은"+19+1+"살입니다.";
 		System.out.println(msg2);
 		
-		msg2=19+1+"살 유병승!";
-		System.out.println(msg2);
-
 	}
 
 }

@@ -77,7 +77,6 @@ public class DeclareVariable {
 		System.out.println(msg2);
 		
 		msg2=19+1+"»ì À¯º´½Â!";
-		System.out.println(msg2);
 
 	}
 
