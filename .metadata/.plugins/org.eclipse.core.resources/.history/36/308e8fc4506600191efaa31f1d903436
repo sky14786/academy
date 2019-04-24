@@ -60,9 +60,9 @@ public class DeclareVariable {
 //		System.out.println(num * 50);
 //		System.out.println(num * 60);
 //		System.out.println(num * 70);
-//		System.out.println(num * 80);		
-//		상수의 선언 및 대입
+//		System.out.println(num * 80);
 		
+//		상수의 선언 및 대입
 		final int AGE;
 		AGE=19;
 		System.out.println(AGE);
@@ -70,7 +70,7 @@ public class DeclareVariable {
 		String msg2 = "안녕! 나는 김준영이야.";
 		System.out.println(msg2);
 		msg2 = new String("안녕 난 준영이야");
-		
+
 	}
 
 }
