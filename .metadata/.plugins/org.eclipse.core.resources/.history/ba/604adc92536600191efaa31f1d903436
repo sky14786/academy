@@ -75,7 +75,8 @@ public class DeclareVariable {
 		System.out.println(msg2);
 		msg2 = "유병승은" + 19 + 1 + "살입니다.";
 		System.out.println(msg2);
-		msg2 = 19 + 1 + "살 유병승!";
+		
+		msg2=19+1+"살 유병승!";
 		System.out.println(msg2);
 
 	}
