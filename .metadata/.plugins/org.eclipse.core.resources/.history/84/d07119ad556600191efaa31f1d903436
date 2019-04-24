@@ -87,7 +87,6 @@ public class DeclareVariable {
 		String memberName = name;
 		System.out.println(memberName);
 		int plusAge = age + 2;
-		System.out.println(plusAge);
 
 	}
 }

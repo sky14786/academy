@@ -83,11 +83,8 @@ public class DeclareVariable {
 		String address = "경기도 시흥시 ";
 		String msg3 = "나는 " + name + "이다 내 나이는 " + age + "살 이고," + address + "에 살고 있습니다.";
 		System.out.println(msg3);
-
-		String memberName = name;
-		System.out.println(memberName);
-		int plusAge = age + 2;
-		System.out.println(plusAge);
+		
+		String memberName=name;
 
 	}
 }

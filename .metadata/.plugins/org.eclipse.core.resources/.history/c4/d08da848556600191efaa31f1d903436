@@ -84,10 +84,5 @@ public class DeclareVariable {
 		String msg3 = "나는 " + name + "이다 내 나이는 " + age + "살 이고," + address + "에 살고 있습니다.";
 		System.out.println(msg3);
 
-		String memberName = name;
-		System.out.println(memberName);
-		int plusAge = age + 2;
-		System.out.println(plusAge);
-
 	}
 }
