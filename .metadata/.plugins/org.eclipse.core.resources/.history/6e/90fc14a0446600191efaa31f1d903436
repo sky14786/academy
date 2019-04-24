@@ -17,9 +17,6 @@ public class DeclareVariable {
 		gender = 'A';
 		System.out.println(gender);
 		
-		String msg;
-		msg = "안녕하세요 저는 김준영 입니다.";
-		System.out.println(msg);
 	}
 
 }
