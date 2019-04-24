@@ -4,9 +4,8 @@ public class DeclareVariable {
 	public void addValue() {
 		boolean flag;
 		flag = true;
-		System.out.println(flag);
-		
 		flag = false;
+		
 		System.out.println(flag);
 	}
 
