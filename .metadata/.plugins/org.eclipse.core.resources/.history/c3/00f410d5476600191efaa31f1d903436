@@ -34,9 +34,6 @@ public class DeclareVariable {
 		// short가 표현할수 없는 범위를 벗어나는 리터럴값이기 때문에 자동형변환이 되지 않음
 		// snum=90000;
 		System.out.println(snum);
-		
-		num = 90000;
-		System.out.println(num);
 
 	}
 
