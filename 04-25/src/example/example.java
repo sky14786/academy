@@ -18,6 +18,7 @@ public class example {
 		char gender;
 
 		System.out.println("이름\t나이\t성별\t지역\t전화번호\t\t이메일");
+
 		name = "홍두깨";
 		age = 22;
 		gender = '남';
