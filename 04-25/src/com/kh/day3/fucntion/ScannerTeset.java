@@ -15,7 +15,7 @@ public class ScannerTeset {
 		// sc.nextLine()을 사용할때는 위 코드에서 sc.next() / sc.nextInt()
 		// sc.nextFFloat() / sc.nextDouble()이 있는지 확인하고 있으면 반드시 sc.nextLine()을 사용하여
 		// buffer 를 비워주어야 한다.
-
+		
 		String name = sc.nextLine(); // 엔터를 기준으로 값을 받음
 
 		System.out.print("당신의 키는 : ");
