@@ -1,5 +1,7 @@
 package example;
 
+
+
 public class example {
 
 	public static void main(String[] args) {
@@ -38,6 +40,9 @@ public class example {
 		System.out.println("------------------------------------------");
 		System.out.printf("%s\t%d\t%c\t%s\t%s\t%s", name, age, gender, local, phone, email);
 		System.out.println();
+		
+		
+		
 
 	}
 
