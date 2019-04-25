@@ -3,7 +3,7 @@ package kh.vari.function;
 import java.util.Scanner;
 
 public class VariExample {
-	Scanner sc = new Scanner(System.in);
+	public Scanner sc = new Scanner(System.in);
 
 	public void example() {
 
