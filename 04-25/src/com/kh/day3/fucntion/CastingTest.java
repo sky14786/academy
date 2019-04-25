@@ -18,6 +18,10 @@ public class CastingTest {
 		char ch='A';
 		int character =ch;
 		System.out.println(character);
+		
+		byte bnum = 100+1;
+		byte bnum2 = 2;
+		byte bresult = bnum + bnum2;
 
 	}
 }
