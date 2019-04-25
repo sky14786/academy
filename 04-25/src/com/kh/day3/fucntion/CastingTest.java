@@ -14,14 +14,20 @@ public class CastingTest {
 		int su = 10;
 		double height = 180.5;
 		double result = su + height;
-		
-		char ch='A';
-		int character =ch;
+
+		char ch = 'A';
+		int character = ch;
 		System.out.println(character);
-		
-		byte bnum = 100+1;
+
+		byte bnum = 100 + 1;
 		byte bnum2 = 2;
-		byte bresult = bnum + bnum2;
+		byte bresult = (byte) (bnum + bnum2);
+
+		String name = "유병승";
+		char gender = '남';
+		double weight = 65.5;
+		int age = 19;
+		System.out.printf("내 이름은 %s 이고 나이는 %d살, 성별은 %c 몸무게는%.1f", name, age, gender, weight);
 
 	}
 }
