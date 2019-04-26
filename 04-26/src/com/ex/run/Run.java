@@ -6,7 +6,7 @@ public class Run {
 
 	public static void main(String[] args) {
 		ExTest exTest = new ExTest();
-		exTest.cal();
+		exTest.cal3();
 	}
 
 }

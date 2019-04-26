@@ -24,5 +24,13 @@ public class OperatorTest {
 		System.out.println(a != c);
 		System.out.println(a > c);
 		System.out.println(a >= c);
+
+		double dnum = 12.34, dnum2 = 34.5;
+		System.out.println(dnum == dnum2);
+		System.out.println(dnum != dnum2);
+		System.out.println(dnum > dnum2);
+
+		char ch = 'a', ch1 = 'b', ch2 = 'a';
+		System.out.println(ch < ch1);
 	}
 }
