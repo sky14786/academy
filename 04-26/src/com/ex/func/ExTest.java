@@ -49,4 +49,17 @@ public class ExTest {
 		System.out.println((b % 3 == 0) ? b : "3의 배수가 아닙니다.");
 
 	}
+
+	public void cal4() {
+		// 일반논리연산자
+		// 비교연산자(논리값)를 두개이상 결합하는 결과!
+		boolean flagC = true, flagD = false;
+		System.out.println(flagC && flagD);
+		System.out.println(flagC || flagD);
+
+		int age = 19;
+		char gender = '남';
+		System.out.println(age > 19 && gender == '남');
+
+	}
 }
