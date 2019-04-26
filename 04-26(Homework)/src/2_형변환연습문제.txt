@@ -31,8 +31,3 @@ public void printBitCount(){}
 	정수 입력 : 11
  - 출력예 : 
 	11의 2진수에 포함된 1의 갯수 : 3
-
-
-
-
-

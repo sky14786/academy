@@ -22,7 +22,7 @@ public class MoneyEx {
 		System.out.println("A의 인센티브 포함 급여는 : " + a + "만원" + (a >= 3000 ? "한턱쏴" : "내가살게!"));
 		System.out.println("B의 인센티브 포함 급여는 : " + b + "만원" + (b >= 3000 ? "한턱쏴" : "내가살게!"));
 		System.out.println("C의 인센티브 포함 급여는 : " + c + "만원" + (c >= 3000 ? "한턱쏴" : "내가살게!"));
-
+ 
 	}
 
 }
