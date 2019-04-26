@@ -59,7 +59,9 @@ public class ExTest {
 
 		int age = 19;
 		char gender = '³²';
-		System.out.println(age > 19 && gender == '³²');
+		boolean flagMili = true;
+		System.out.println(age > 19 && gender == '³²' && flagMili == true);
+		
 
 	}
 }
