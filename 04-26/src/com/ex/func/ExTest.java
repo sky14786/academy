@@ -9,7 +9,9 @@ public class ExTest {
 
 		System.out.println("정수1번 입력하시오");
 		int num = sc.nextInt();
+
 		sc.nextLine();
+
 		System.out.println("정수2번 입력하시오");
 		int num2 = sc.nextInt();
 
