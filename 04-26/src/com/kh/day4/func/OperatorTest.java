@@ -33,4 +33,26 @@ public class OperatorTest {
 		char ch = 'a', ch1 = 'b', ch2 = 'a';
 		System.out.println(ch < ch1);
 	}
+
+	public void complexTest() {
+		int a = 10, b = 20, c = 30;
+		a += 3;
+		System.out.println(a);
+		a += b;
+		System.out.println(a);
+		a -= c;
+		System.out.println(a);
+	}
+
+	public void sum() {
+		int sum = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수 3개를 입력하시오");
+		sum += sc.nextInt();
+		sum += sc.nextInt();
+		sum += sc.nextInt();
+
+		System.out.println("합은 : " + sum);
+
+	}
 }

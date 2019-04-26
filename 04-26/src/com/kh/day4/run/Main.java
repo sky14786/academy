@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		OperatorTest operatorTest = new OperatorTest();
-		operatorTest.compare();
+		operatorTest.complexTest();
 	}
 
 }
