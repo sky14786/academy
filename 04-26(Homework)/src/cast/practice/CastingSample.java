@@ -4,23 +4,20 @@ import java.util.Scanner;
 import java.lang.Integer;
 
 public class CastingSample {
-	Scanner sc = new Scanner(System.in);
-	// public void printUniCode(){}
-	// - 키보드로 문자하나를 입력받아, 그 문자의 유니코드를 출력되게 함
-	// - 입력예 :
-	// 문자 입력 : A
-	// - 출력예 :
-	// A is unicode : 95
 
 	public void printUniCode() {
+		Scanner sc = new Scanner(System.in);
+
 		System.out.print("문자 하나를 입력하시오  : ");
 		String word = sc.nextLine();
-		int num = (int) word.charAt(0);
 
+		int num = (int) word.charAt(0);
 		System.out.println(word.charAt(0) + " is Unicode " + num);
 	}
 
 	public void calculatorScore() {
+		Scanner sc = new Scanner(System.in);
+
 		System.out.print("국어 점수를 입력하시오 : ");
 		double kor = sc.nextDouble();
 		System.out.print("영어 점수를 입력하시오 : ");
@@ -37,11 +34,13 @@ public class CastingSample {
 	}
 
 	public void printBitCount() {
+		Scanner sc = new Scanner(System.in);
+
 		System.out.print("정수 하나를 입력하시오 : ");
 		int num = sc.nextInt();
 
 		String bin = Integer.toBinaryString(num);
-		System.out.println(num+"의 2진수에 포함된 1의 개수는 "+bin.compareTo("1")+"개 입니다.");
+		System.out.println(num + "의 2진수에 포함된 1의 개수는 " + bin.compareTo("1") + "개 입니다.");
 
 	}
 }
