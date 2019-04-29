@@ -45,4 +45,20 @@ public class TestOperator {
 		System.out.println("문자 입력 : " + ch);
 		System.out.println(ch + " -> " + (char) changer);
 	}
+
+	// 강사님 소스 4-3번문제
+	public void changeChar() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("영문자 한개를 이볅하세요(대소문자 구분 : ");
+		char ch = sc.next().charAt(0);
+		// char msg = ch >= 'a' && ch <= 'z' ? (char) (ch - 32) : (char) (ch + 32);
+		char msg = ch >= 'a' && ch <= 'z' ? (char) (ch - 32) : (ch >= 'A' && ch <= 'Z' ? (char) (ch + 32) : 'X');
+		System.out.println("변경값 : " + msg);
+		// System.out.println(ch);
+		// 입력받은 글자가 소문자일때 대문자로
+		// System.out.println("입력받은값 : " + ch + " , 변경 : " + (ch - 32));
+		// 입력받은 글자가 대문자일때 소문자로
+		// System.out.println("입력받은값 : " + ch + " , 변경 : " + (ch + 32));
+		// System.out.println("변경값 : " + (char) (ch ^ 32));
+	}
 }
