@@ -88,6 +88,15 @@ public class ConditionTest {
 		if (sum >= 250) {
 			System.out.println("우수생입니다.");
 		}
+		if (avg >= 90 && avg <= 100) {
+			System.out.println("A입니다.");
+		}
+		if (avg >= 80 && avg < 90) {
+			System.out.println("B입니다.");
+		}
+		if (avg >= 70 && avg < 80) {
+			System.out.println("C입니다");
+		}
 
 	}
 
