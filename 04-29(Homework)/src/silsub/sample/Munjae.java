@@ -104,10 +104,12 @@ public class Munjae {
 		height = sc.nextDouble();
 
 		if (age > 0 && height > 0) {
-			System.out.println("이름 : " + name);
-			System.out.println("나이 : " + age);
-			System.out.println("키 : " + height);
-			System.out.println(name + "의 나이는 " + age + "세이고, 키는" + height + " 이다.");
+			if (name == null && name.length() > 0) {
+				System.out.println("이름 : " + name);
+				System.out.println("나이 : " + age);
+				System.out.println("키 : " + height);
+				System.out.println(name + "의 나이는 " + age + "세이고, 키는" + height + " 이다.");
+			}
 		}
 	}
 
