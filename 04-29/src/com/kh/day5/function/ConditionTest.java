@@ -215,4 +215,51 @@ public class ConditionTest {
 		System.out.printf("%d학년 %d반 %d번 %c학생 %s은 성적이 %.2f이다.", grade, classNumber, no, gender, name, result);
 	}
 
+	public void iElseIfTest() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("나이 : ");
+		int age = sc.nextInt();
+		if (age > 19) {
+			System.out.println("당신은 성인이네요 한잔?!");
+		} else if (age > 17) {
+			System.out.println("당신은 고등학생!");
+		} else if (age > 14) {
+			System.out.println("당신은 중학생!");
+		}
+	}
+
+	public void calTest() {
+		Scanner sc = new Scanner(System.in);
+		int num, num2;
+		char oper;
+
+		System.out.print("정수1 입력 : ");
+		num = sc.nextInt();
+		System.out.print("정수2 입력 : ");
+		num2 = sc.nextInt();
+		System.out.print("기호입력 [+,-,/,*] : ");
+		oper = sc.next().charAt(0);
+
+		if (num < 0 || num2 < 0) {
+			System.out.println("정수를 잘못입력하셨습니다.");
+		} else if (oper == '+') {
+			System.out.println(num + "+" + num2 + "=" + (num + num2));
+		} else if (oper == '-') {
+			System.out.println(num + "-" + num2 + "=" + (num - num2));
+		} else if (oper == '*') {
+			System.out.println(num + "*" + num2 + "=" + (num * num2));
+		} else if (oper == '/') {
+			System.out.println(num + "/" + num2 + "=" + (double) ((num / num2)));
+		} else {
+			System.out.println("기호를 잘못 입력하셨습니다.");
+		}
+
+		if (num < 0 || num2 < 0) {
+			System.out.println("숫자잘못입력");
+		} else if (oper != '+' && oper != '-' && oper != '*' && oper != '/') {
+			System.out.println("부호잘못입력");
+		}
+
+	}
+
 }

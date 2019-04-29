@@ -7,7 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 //		new ConditionTest().condition();
 //		new ConditionTest().checkGender();
-		new ConditionTest().ifElseSample2();
+//		new ConditionTest().ifElseSample2();
+		new ConditionTest().calTest();
 	}
 
 }
