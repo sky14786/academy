@@ -88,8 +88,66 @@ public class Munjae {
 			}
 		}
 	}
-	
+
 	public void inputTest() {
-		
+		Scanner sc = new Scanner(System.in);
+
+		String name;
+		int age;
+		double height;
+
+		System.out.print("이름을 입력하세요 : ");
+		name = sc.nextLine();
+		System.out.print("나이를 입력하세요 : ");
+		age = sc.nextInt();
+		System.out.print("키를 입력하세요 : ");
+		height = sc.nextDouble();
+
+		if (age > 0 && height > 0) {
+			System.out.println("이름 : " + name);
+			System.out.println("나이 : " + age);
+			System.out.println("키 : " + height);
+			System.out.println(name + "의 나이는 " + age + "세이고, 키는" + height + " 이다.");
+		}
+	}
+
+	public void test6() {
+		Scanner sc = new Scanner(System.in);
+		int num, num2;
+		System.out.print("정수 1 입력 : ");
+		num = sc.nextInt();
+		System.out.print("정수 2 입력 : ");
+		num2 = sc.nextInt();
+
+		if (num > 0 && num2 > 0) {
+			System.out.println(num + " + " + num2 + " = " + (num + num2));
+			System.out.println(num + " - " + num2 + " = " + (num - num2));
+			System.out.println(num + " * " + num2 + " = " + (num * num2));
+			System.out.println(num + " / " + num2 + " = " + (num / num2));
+			System.out.println(num + " % " + num2 + " = " + (num % num2));
+		}
+	}
+
+	public void test7() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("점수를 입력하시오 : ");
+		int score = sc.nextInt();
+		char result=' ';
+		if(score>0) {
+			if(score>=90) {
+				result='A';
+			}else if(score>=80) {
+				result='B';
+			}else if(score>=70) {
+				result='C';
+			}else if(score>=60) {
+				result='D';
+			}else {
+				result='F';
+			}
+		}else {
+			System.out.println("점수를 잘못 입력하셨습니다.");
+		}
+		System.out.println("점수는 : "+score+" 학점은 : "+result);
 	}
 }
