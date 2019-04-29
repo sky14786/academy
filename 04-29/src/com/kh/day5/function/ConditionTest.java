@@ -240,26 +240,69 @@ public class ConditionTest {
 		System.out.print("기호입력 [+,-,/,*] : ");
 		oper = sc.next().charAt(0);
 
-		if (num < 0 || num2 < 0) {
+		if ((num < 0 || num2 < 0) || (oper != '+' && oper != '-' && oper != '*' && oper != '/')) {
 			System.out.println("정수를 잘못입력하셨습니다.");
-		} else if (oper == '+') {
-			System.out.println(num + "+" + num2 + "=" + (num + num2));
-		} else if (oper == '-') {
-			System.out.println(num + "-" + num2 + "=" + (num - num2));
-		} else if (oper == '*') {
-			System.out.println(num + "*" + num2 + "=" + (num * num2));
-		} else if (oper == '/') {
-			System.out.println(num + "/" + num2 + "=" + (double) ((num / num2)));
 		} else {
-			System.out.println("기호를 잘못 입력하셨습니다.");
+			if (oper == '+') {
+				System.out.println(num + "+" + num2 + "=" + (num + num2));
+			} else if (oper == '-') {
+				System.out.println(num + "-" + num2 + "=" + (num - num2));
+			} else if (oper == '*') {
+				System.out.println(num + "*" + num2 + "=" + (num * num2));
+			} else if (oper == '/') {
+				System.out.println(num + "/" + num2 + "=" + (double) ((num / num2)));
+			}
 		}
 
-		if (num < 0 || num2 < 0) {
-			System.out.println("숫자잘못입력");
-		} else if (oper != '+' && oper != '-' && oper != '*' && oper != '/') {
-			System.out.println("부호잘못입력");
+//		if (num < 0 || num2 < 0) {
+//			System.out.println("숫자잘못입력");
+//		} else if (oper != '+' && oper != '-' && oper != '*' && oper != '/') {
+//			System.out.println("부호잘못입력");
+//		}
+
+	}
+
+	public void ifSample() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 하나를 입력하시오 : ");
+		int num = sc.nextInt();
+		if (num <= 10 && num >= 1) {
+			if (num % 2 == 0) {
+				System.out.println("짝수입니다");
+			} else {
+				System.out.println("홀수입니다.");
+			}
 		}
 
+	}
+
+	public void ifSample2() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("키를 입력하시오 : ");
+		double height = sc.nextDouble() * 0.01;
+		System.out.print("몸무게를 입력하시오 : ");
+		double weight = sc.nextDouble();
+		double bmi = weight / (height * height);
+
+		String str = "";
+
+		if (bmi >= 30) {
+			str = "비만입니다";
+		} else {
+			if (bmi >= 25) {
+				str = "과체중입니다";
+			} else {
+				if (bmi >= 20) {
+					str = "정상체중입니다.";
+				} else {
+					if (bmi <= 15) {
+						str = "저체중입니다.";
+					}
+				}
+			}
+		}
+
+		System.out.println(str);
 	}
 
 }

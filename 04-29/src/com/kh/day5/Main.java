@@ -8,7 +8,8 @@ public class Main {
 //		new ConditionTest().condition();
 //		new ConditionTest().checkGender();
 //		new ConditionTest().ifElseSample2();
-		new ConditionTest().calTest();
+//		new ConditionTest().calTest();
+//		new ConditionTest().ifSample2();
 	}
 
 }
