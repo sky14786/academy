@@ -164,4 +164,55 @@ public class ConditionTest {
 			System.out.println("미성년자입니다.");
 		}
 	}
+
+	public void ifElseSample() {
+		Scanner sc = new Scanner(System.in);
+		int kor, eng, mat, sum;
+		double avg;
+
+		System.out.print("국어 점수 입력 : ");
+		kor = sc.nextInt();
+		System.out.print("영어 점수 입력 : ");
+		eng = sc.nextInt();
+		System.out.print("수학 점수 입력 : ");
+		mat = sc.nextInt();
+
+		sum = kor + mat + eng;
+		avg = sum / 3;
+
+		if (kor >= 40 && eng >= 40 && mat >= 40 && avg >= 60) {
+			System.out.println("합격입니다.");
+		} else {
+			System.out.println("불합격입니다.");
+		}
+	}
+	
+	public void ifElseSample2() {
+		Scanner sc = new Scanner(System.in);
+		String name;
+		char gender;
+		int classNumber, grade,no;
+		double result;
+		
+		System.out.print("이름을 입력하시오 : ");
+		name = sc.nextLine();
+		System.out.print("학년을 입력하시오 : ");
+		grade = sc.nextInt();
+		System.out.print("반을 입력하시오 : ");
+		classNumber = sc.nextInt();
+		System.out.print("번호를 입력하시오 : ");
+		no =sc.nextInt();
+		System.out.print("성별을 입력하시오 ex. M,F : ");
+		if(sc.nextLine().charAt(0)=='M') {
+			gender = '남';
+		}
+		else {
+			gender = '여';
+		}
+		System.out.print("성적을 입려가시오 : ");
+		result = sc.nextDouble();
+		
+		System.out.printf("%d학년 %d반 %d번 %c학생 %s은 성적이 %.2f이다.",grade,classNumber,no,gender,name,result);
+	}
+
 }
