@@ -126,4 +126,42 @@ public class ConditionTest {
 			System.out.println("홀수입니다.");
 		}
 	}
+
+	public void teacherSample1() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("수학점수 : ");
+		int math = sc.nextInt();
+		System.out.print("국어점수 : ");
+		int kor = sc.nextInt();
+		System.out.print("영어점수 : ");
+		int eng = sc.nextInt();
+
+		int sum = kor + eng + math;
+		double avg = sum / 3.0;
+
+		if (sum > 250) {
+			System.out.println("우수생입니다.");
+		}
+		if (avg >= 90) {
+			System.out.println("A");
+		}
+		if (avg < 90 && avg >= 80) {
+			System.out.println("B");
+		}
+		if (avg < 80 && avg >= 70) {
+			System.out.println("C");
+		}
+	}
+
+	public void ifElseTest() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("당신의 나이는 : ");
+		int age = sc.nextInt();
+
+		if (age > 19) {
+			System.out.println("성인입니다.");
+		} else {
+			System.out.println("미성년자입니다.");
+		}
+	}
 }
