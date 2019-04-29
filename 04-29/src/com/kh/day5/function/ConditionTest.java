@@ -186,14 +186,14 @@ public class ConditionTest {
 			System.out.println("불합격입니다.");
 		}
 	}
-	
+
 	public void ifElseSample2() {
 		Scanner sc = new Scanner(System.in);
 		String name;
 		char gender;
-		int classNumber, grade,no;
+		int classNumber, grade, no;
 		double result;
-		
+
 		System.out.print("이름을 입력하시오 : ");
 		name = sc.nextLine();
 		System.out.print("학년을 입력하시오 : ");
@@ -201,18 +201,18 @@ public class ConditionTest {
 		System.out.print("반을 입력하시오 : ");
 		classNumber = sc.nextInt();
 		System.out.print("번호를 입력하시오 : ");
-		no =sc.nextInt();
+		no = sc.nextInt();
 		System.out.print("성별을 입력하시오 ex. M,F : ");
-		if(sc.nextLine().charAt(0)=='M') {
+		sc.nextLine();
+		if (sc.nextLine().charAt(0) == 'M') {
 			gender = '남';
-		}
-		else {
+		} else {
 			gender = '여';
 		}
 		System.out.print("성적을 입려가시오 : ");
 		result = sc.nextDouble();
-		
-		System.out.printf("%d학년 %d반 %d번 %c학생 %s은 성적이 %.2f이다.",grade,classNumber,no,gender,name,result);
+
+		System.out.printf("%d학년 %d반 %d번 %c학생 %s은 성적이 %.2f이다.", grade, classNumber, no, gender, name, result);
 	}
 
 }
