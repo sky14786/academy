@@ -22,13 +22,13 @@ public class ConditionTest {
 		System.out.print("당신의 성별은?(남,여) : ");
 		char gender = sc.nextLine().charAt(0);
 
-//		if (gender == '남') {
-//			System.out.println("남자는 오른쪽으로 가시오");
-//		} else if (gender == '여') {
-//			System.out.println("여자는 왼쪽으로 가시오");
-//		} else {
-//			System.out.println("성별을 잘못 입력하셨습니다.");
-//		}
+		// if (gender == '남') {
+		// System.out.println("남자는 오른쪽으로 가시오");
+		// } else if (gender == '여') {
+		// System.out.println("여자는 왼쪽으로 가시오");
+		// } else {
+		// System.out.println("성별을 잘못 입력하셨습니다.");
+		// }
 		if (gender == '남') {
 			System.out.println("남자는 오른쪽으로 가시오");
 		}
