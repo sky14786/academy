@@ -3,7 +3,7 @@ package silsub.sample;
 import java.util.Scanner;
 
 public class Munjae {
-	public void example1() {
+	public void test1() {
 		Scanner sc = new Scanner(System.in);
 		int kor, eng, mat, sum;
 		double avg;
