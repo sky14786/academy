@@ -52,7 +52,16 @@ public class TestOperator {
 		System.out.print("영문자 한개를 이볅하세요(대소문자 구분 : ");
 		char ch = sc.next().charAt(0);
 		// char msg = ch >= 'a' && ch <= 'z' ? (char) (ch - 32) : (char) (ch + 32);
-		char msg = ch >= 'a' && ch <= 'z' ? (char) (ch - 32) : (ch >= 'A' && ch <= 'Z' ? (char) (ch + 32) : 'X');
+//		char msg = ch >= 'a' && ch <= 'z' ? (char) (ch - 32) : (ch >= 'A' && ch <= 'Z' ? (char) (ch + 32) : 'X');
+		char msg = ' ';
+
+		if (ch >= 'a' && ch <= 'z') {
+			msg = (char) (ch - 32);
+		} else if (ch >= 'A' && ch <= 'Z') {
+			msg = (char) (ch + 32);
+		} else {
+			System.out.println("알파벳 이외의 값이 입력되었습니다.");
+		}
 		System.out.println("변경값 : " + msg);
 		// System.out.println(ch);
 		// 입력받은 글자가 소문자일때 대문자로
