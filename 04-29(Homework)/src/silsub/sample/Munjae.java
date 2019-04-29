@@ -132,22 +132,22 @@ public class Munjae {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("점수를 입력하시오 : ");
 		int score = sc.nextInt();
-		char result=' ';
-		if(score>0) {
-			if(score>=90) {
-				result='A';
-			}else if(score>=80) {
-				result='B';
-			}else if(score>=70) {
-				result='C';
-			}else if(score>=60) {
-				result='D';
-			}else {
-				result='F';
+		char result = ' ';
+		if (score > 0) {
+			if (score >= 90) {
+				result = 'A';
+			} else if (score >= 80) {
+				result = 'B';
+			} else if (score >= 70) {
+				result = 'C';
+			} else if (score >= 60) {
+				result = 'D';
+			} else {
+				result = 'F';
 			}
-		}else {
+		} else {
 			System.out.println("점수를 잘못 입력하셨습니다.");
 		}
-		System.out.println("점수는 : "+score+" 학점은 : "+result);
+		System.out.println("점수는 : " + score + " 학점은 : " + result);
 	}
 }
