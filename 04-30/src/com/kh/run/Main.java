@@ -7,6 +7,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		ForController forController = new ForController();
-		forController.forExample4();
+		forController.forProbleom3();
 	}
 }
