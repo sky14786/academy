@@ -11,5 +11,4 @@ public class Main {
 //		new ConditionTest().calTest();
 //		new ConditionTest().ifSample2();
 	}
-
 }
