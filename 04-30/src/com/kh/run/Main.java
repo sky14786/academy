@@ -6,6 +6,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		SwitchController switchController = new SwitchController();
-		switchController.switchTest();
+		switchController.switchExample7();
 	}
 }
