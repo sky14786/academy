@@ -8,5 +8,4 @@ public class Main {
 		SwitchController switchController = new SwitchController();
 		switchController.switchTest();
 	}
-
 }
