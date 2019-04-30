@@ -101,14 +101,17 @@ public class ForController {
 		String str = sc.nextLine();
 		System.out.print("정수를 입력하시오 : ");
 		int num = sc.nextInt();
+		
+		
 		int temp = 0;
-
+		//temp = 122;
 		for (int i = 0; i < str.length(); i++) {
 			temp = str.charAt(i);
 			if (temp >= 97) {
+				//temp = 122 + 27 = 149 
 				temp+=num;
 				if(temp>122) {
-					temp=96+num;
+					temp+=96+num;
 					System.out.print((char)temp+" ");
 				}else {
 					System.out.print((char)temp+" ");
@@ -116,7 +119,7 @@ public class ForController {
 			} else if(temp >= 65) {
 				temp+=num;
 				if(temp>96) {
-					temp=64+num;	
+					temp%=65+num;	
 					System.out.print((char)temp+" ");
 				}else {
 					System.out.print((char)temp+" ");

@@ -6,7 +6,9 @@ import com.kh.controller.ForController;
 public class Main {
 
 	public static void main(String[] args) {
-		ForController forController = new ForController();
-		forController.forProbleom3();
-	}
+//		ForController forController = new ForController();
+//		forController.
+		
+	
+		}
 }
