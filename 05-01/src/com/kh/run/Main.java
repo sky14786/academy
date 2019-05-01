@@ -10,6 +10,6 @@ public class Main {
 //		whileController.whileStudy();
 //		whileController.whileExample1();
 //		whileController.doWhileStudy();
-		whileController.example1();
+		whileController.testExample3();
 	}
 }
