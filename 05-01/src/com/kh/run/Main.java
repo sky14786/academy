@@ -8,7 +8,8 @@ public class Main {
 		WhileController whileController = new WhileController();
 		
 //		whileController.whileStudy();
-		whileController.whileExample1();
+//		whileController.whileExample1();
+//		whileController.doWhileStudy();
+		whileController.example1();
 	}
-
 }
