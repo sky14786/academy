@@ -233,7 +233,7 @@ public class WhileController {
 		int input = sc.nextInt();
 		System.out.print("상품 가격을 입력하세요 : ");
 		int goods = sc.nextInt();
-		int temp = 0, changer = 0;
+		int temp = 0;
 		int result = input - goods;
 
 		temp = result / 50000;
