@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class test {
 	public static void main(String[] args) {
-		ex();
+		beta();
 	}
 
 	public static void ex() {
@@ -36,7 +36,7 @@ public class test {
 
 		}
 	}
-	
+
 	public static void prac01() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("문장을 입력하세요 : ");
@@ -66,4 +66,54 @@ public class test {
 		}
 	}
 
+	public static void beta()
+	  {
+	     Scanner sc = new Scanner(System.in);
+	     System.out.print("문자열 한 개를 입력해주세요 : ");
+	     String str = sc.nextLine();
+	     System.out.print("정수를 입력해주세요. : ");
+	     int num = sc.nextInt();
+	     
+	     if(num>0)   // 0보다 큰 정수 입력
+	     {
+	        int gap = num%26;
+	        for(int i=0; i<str.length(); i++)
+	        {
+	           char ch = str.charAt(i);
+	           
+	           if(ch>='A' && ch<='Z')      //대문자일때
+	           {
+	              if(ch+gap>90)
+	                 System.out.print((char)(ch-26+gap));
+	              else
+	                 System.out.print((char)(ch+gap));
+	           }
+	           
+	           else if(ch>='a' && ch<='z')   //소문자일때
+	           {
+	              if(ch+gap>122)
+	                 System.out.print((char)(ch-26+gap));
+	              else
+	                 System.out.print((char)(ch+gap));
+	           }
+	           
+	           else if(ch==' ')  //ch가 공백문자일때
+	           {
+	              System.out.print(ch);
+	           }
+	           
+	           else  //예외처리
+	           {
+	              System.out.println("...");
+	              System.out.println("알파벳과 공백문자 외의 문자이므로 암호화 실패!");
+	              System.out.println("프로그램을 종료합니다.");
+	              return;
+	           }
+	        }
+	     }
+	     else
+	     {
+	        System.out.println("0보다 큰 정수만 입력 가능합니다.");
+	     }  
+	  }
 }
