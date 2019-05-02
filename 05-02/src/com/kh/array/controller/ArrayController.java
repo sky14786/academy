@@ -143,5 +143,24 @@ public class ArrayController {
 				System.out.print(arr[i] + " ");
 			}
 		}
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				if (arr[i] == arr[j]) {
+					arr[i] = (int) (Math.random() * 45) + 1;
+				}
+			}
+		}
+		int temp2;
+		System.out.println();
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 1; j < arr.length; j++) {
+				if (arr[i] < arr[j]) {
+					temp2 = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp2;
+				}
+			}
+			System.out.print(arr[i]+" ");
+		}
 	}
 }
