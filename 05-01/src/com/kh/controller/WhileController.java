@@ -163,13 +163,6 @@ public class WhileController {
 
 	}
 
-	public void example3() {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("몇개 저장 ? : ");
-		int input = sc.nextInt();
-
-	}
-
 	public void breakTest() {
 		for (int i = 0;; i++) {
 			System.out.print(i + " ");
@@ -268,6 +261,27 @@ public class WhileController {
 		result -= (temp * 10);
 		System.out.println("십원 : " + temp);
 
+	}
+
+	public void primeNum() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수입력 : ");
+		int su = sc.nextInt();
+		int count = 0;
+		if (su > 2) {
+			for (int i = 0; i < su; i++) {
+				if (su % (i + 1) == 0) {
+					count++;
+				}
+				if (count > 2) {
+					System.out.println("소수가 아니다");
+				} else {
+					System.out.println("소수다.");
+				}
+			}
+		} else {
+			System.out.print("잘못입력하셨습니다.");
+		}
 	}
 
 }
