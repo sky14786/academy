@@ -265,23 +265,30 @@ public class WhileController {
 
 	public void primeNum() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("정수입력 : ");
-		int su = sc.nextInt();
-		int count = 0;
-		if (su > 2) {
-			for (int i = 0; i < su; i++) {
-				if (su % (i + 1) == 0) {
-					count++;
+		while (true) {
+			System.out.print("정수입력 : ");
+			int su = sc.nextInt();
+			int count = 0;
+			if (su > 2) {
+				for (int i = 0; i < su; i++) {
+					if (su % (i + 1) == 0) {
+						count++;
+					}
+					if (count > 2) {
+						System.out.println("소수가 아니다");
+					} else {
+						System.out.println("소수다.");
+					}
 				}
-				if (count > 2) {
-					System.out.println("소수가 아니다");
-				} else {
-					System.out.println("소수다.");
-				}
+			} else {
+				System.out.print("잘못입력하셨습니다.");
 			}
-		} else {
-			System.out.print("잘못입력하셨습니다.");
+			sc.nextLine();
+			System.out.println("계속 진행하시겠습니까?(Y/N)?");
+			String go = sc.nextLine();
+			if (go.equals("N")) {
+				break;
+			}
 		}
 	}
-
 }
