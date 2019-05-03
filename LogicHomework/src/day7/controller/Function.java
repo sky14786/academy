@@ -135,6 +135,16 @@ public class Function {
 	public void continueGugudan() {
 		System.out.print("정수 하나 입력 : ");
 		int num = sc.nextInt();
+		if (num > 0) {
+			System.out.println("단수 : " + num);
+			for (int i = 1; i < 10; i++) {
+				if (i % num == 0)
+					continue;
+				System.out.println(num + " * " + i + " = " + (num * i));
+			}
+		} else {
+			System.out.println("양수가 아닙니다.");
+		}
 
 	}
 
