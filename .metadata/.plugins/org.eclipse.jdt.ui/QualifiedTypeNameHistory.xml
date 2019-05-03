@@ -11,6 +11,10 @@
 <fullyQualifiedTypeName name="com.kh.controller.WhileController"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.kh.array.controller.ArrayController"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="com.loop.ForWhile"/>
+<fullyQualifiedTypeName name="home.menu.CashBurgerKing"/>
+<fullyQualifiedTypeName name="day7.view.Menu"/>
+<fullyQualifiedTypeName name="day7.controller.Function"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
