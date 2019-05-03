@@ -1,54 +1,8 @@
-package com.kh.controller;
+package repeat.func;
 
 import java.util.Scanner;
 
-public class WhileController {
-	public void whileStudy() {
-		int i = 0;
-		while (i < 10) {
-			System.out.print(i + " ");
-			i++;
-		}
-	}
-
-	public void doWhileStudy() {
-		int num3 = 10;
-		while (num3 < 10) {
-			System.out.println("이거 실행되니?");
-		}
-		do {
-			System.out.println("이거 실행되니?");
-			num3++;
-		} while (num3 < 20);
-
-	}
-
-	public void whileExample1() {
-		int i = 1;
-		while (i <= 100) {
-			System.out.println(i);
-			i++;
-		}
-	}
-
-	public void whileExample2() {
-		int i = 100;
-		while (i >= 100) {
-			System.out.println(i);
-			i--;
-		}
-	}
-
-	public void whileExample3() {
-		int i = 1;
-		while (i <= 100) {
-			if (i % 2 != 0) {
-				System.out.println(i);
-			}
-			i++;
-		}
-	}
-
+public class Controller {
 	public void whileExample4() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수를 입력하시오 : ");
@@ -163,12 +117,6 @@ public class WhileController {
 
 	}
 
-	public void breakTest() {
-		for (int i = 0;; i++) {
-			System.out.print(i + " ");
-		}
-	}
-
 	public void testExample1() {
 		Scanner sc = new Scanner(System.in);
 		int ran = (int) (Math.random() * 100 + 1);
@@ -220,6 +168,44 @@ public class WhileController {
 		}
 	}
 
+	public static void ex() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("문자열을 입력하시오 : ");
+		String str = sc.nextLine();
+		System.out.print("정수를 입력하시오 : ");
+		int num = sc.nextInt();
+		String answer = "";
+
+		int temp = 0;
+		for (int i = 0; i < str.length(); i++) {
+			temp = str.charAt(i);
+			// 소문자 97 ~ 122 (a~z) 대문자 65 ~ 90 A~Z
+			if (str.charAt(i) != ' ') {
+				if (!((temp >= 65 && temp <= 90) || (temp >= 97 && temp <= 122))) {
+					answer = "Error";
+				} else {
+					num %= 26;
+					if (temp >= 65 && temp <= 90) {
+						temp += num;
+						if (temp > 90) {
+							temp -= 26;
+						}
+					} else if (temp >= 97 && temp <= 122) {
+						temp += num;
+						if (temp > 122) {
+							temp -= 26;
+						}
+					}
+					answer += (char) temp;
+				}
+			} else {
+				answer += " ";
+			}
+
+		}
+		System.out.println(answer);
+	}
+
 	public void testExample3() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("받으신 금액을 입력하세요 : ");
@@ -263,7 +249,7 @@ public class WhileController {
 
 	}
 
-	//소수구하기 강사님
+	// 소수구하기 강사님
 	public void primeNum() {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
