@@ -147,4 +147,12 @@ public class test {
 			}
 	      return answer;
 	  }
+	
+	public void javaTest() {
+		
+	}
+	
+	
+	
+	
 }

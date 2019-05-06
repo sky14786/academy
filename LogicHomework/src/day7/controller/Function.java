@@ -138,8 +138,9 @@ public class Function {
 		if (num > 0) {
 			System.out.println("´Ü¼ö : " + num);
 			for (int i = 1; i < 10; i++) {
-				if (i % num == 0)
+				if (i % num == 0) {
 					continue;
+				}
 				System.out.println(num + " * " + i + " = " + (num * i));
 			}
 		} else {
