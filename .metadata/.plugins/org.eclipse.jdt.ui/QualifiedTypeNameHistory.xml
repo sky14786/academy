@@ -21,16 +21,17 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="logic.home.view.Menu"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="logic.home.model.VariableSample"/>
 <fullyQualifiedTypeName name="logic.home.model.PrimitiveTypeSample"/>
 <fullyQualifiedTypeName name="logic.home.model.IfSample"/>
 <fullyQualifiedTypeName name="logic.home.model.SwitchSample"/>
 <fullyQualifiedTypeName name="logic.home.model.ForSample"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="logic.home.model.WhileSample"/>
 <fullyQualifiedTypeName name="logic.home.model.DoWhileSample"/>
 <fullyQualifiedTypeName name="logic.home.model.ContinueSample"/>
 <fullyQualifiedTypeName name="logic.home.model.StaticMethodSample"/>
 <fullyQualifiedTypeName name="logic.home.model.NonStaticMethodSample"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.kh.forinfor.controller.ForInForController"/>
 </qualifiedTypeNameHistroy>

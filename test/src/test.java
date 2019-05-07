@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class test {
 	public static void main(String[] args) {
-		javaTest3();
+		javaTest5();
 	}
 
 	public static void ex() {
@@ -180,9 +180,32 @@ public class test {
 		}
 		System.out.println(arr);
 
-		for (int i = arr.length - 1; i >= 0; i--) {
-			System.out.print(arr[i]);
+		for (int i = 0; i < arr.length; i++) {
+			if (i == 1 || i == 4)
+				System.out.print(arr[i]);
 		}
 	}
 
+	public static void javaTest4() {
+		int[] intArr = { 1, 2, 3, 4, 5 };
+		int[] copyArr = new int[intArr.length];
+		for (int i = 0; i < intArr.length; i++) {
+			copyArr[i] = intArr[i];
+		}
+		for (int i = 0; i < intArr.length; i++) {
+			System.out.println(intArr[i]+" : ");
+			System.out.print(copyArr[i]);
+		}
+		int[] copy2 = new int[intArr.length];
+		System.arraycopy(intArr, 0, copy2, 0, intArr.length);
+	}
+	
+	public static void javaTest5() {
+		char[] arr = {'a','p','p','l','e'};
+		char[] temp = new char[arr.length];
+		
+		System.arraycopy(arr, 1, temp, 2, 3);
+		
+		System.out.println(temp);
+	}
 }
