@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class test {
 	public static void main(String[] args) {
-		ex();
+		javaTest2();
 	}
 
 	public static void ex() {
@@ -118,41 +118,57 @@ public class test {
 			System.out.println("0보다 큰 정수만 입력 가능합니다.");
 		}
 	}
-	
+
 	public String solution(String s, int n) {
-	      String answer = "";
+		String answer = "";
 
-			int temp = 0;
-			for (int i = 0; i < s.length(); i++) {
-				temp = s.charAt(i);
-				// 소문자 97 ~ 122 (a~z) 대문자 65 ~ 90 A~Z
-				if (s.charAt(i) != ' ') {
-					n %= 26;
-					if (temp >= 65 && temp <= 90) {
-						temp += n;
-						if (temp > 90) {
-							temp -= 26;
-						}
-					} else if (temp >= 97 && temp <= 122) {
-						temp += n;
-						if (temp > 122) {
-							temp -= 26;
-						}
+		int temp = 0;
+		for (int i = 0; i < s.length(); i++) {
+			temp = s.charAt(i);
+			// 소문자 97 ~ 122 (a~z) 대문자 65 ~ 90 A~Z
+			if (s.charAt(i) != ' ') {
+				n %= 26;
+				if (temp >= 65 && temp <= 90) {
+					temp += n;
+					if (temp > 90) {
+						temp -= 26;
 					}
-					answer += (char)temp;
-				} else {
-					answer +=" ";
+				} else if (temp >= 97 && temp <= 122) {
+					temp += n;
+					if (temp > 122) {
+						temp -= 26;
+					}
 				}
-
+				answer += (char) temp;
+			} else {
+				answer += " ";
 			}
-	      return answer;
-	  }
-	
-	public void javaTest() {
-		
+
+		}
+		return answer;
 	}
-	
-	
-	
-	
+
+	public static void javaTest() {
+		int[] arr = new int[100];
+
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = i + 1;
+			System.out.println(arr[i]);
+		}
+	}
+
+	public static void javaTest2() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("딸기, 바나나, 복숭아, 키위, 사과 : ");
+		String temp = sc.nextLine();
+		String[] str = { "딸기", "바나나", "복숭아", "키위", "사과" };
+
+		for (int i = 0; i < str.length; i++) {
+			if (str[i].equals(temp)) {
+				System.out.println(str[i] + "   " + i);
+				break;
+			}
+		}
+	}
+
 }
