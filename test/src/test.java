@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class test {
 	public static void main(String[] args) {
-		javaTest2();
+		javaTest3();
 	}
 
 	public static void ex() {
@@ -168,6 +168,20 @@ public class test {
 				System.out.println(str[i] + "   " + i);
 				break;
 			}
+		}
+	}
+
+	public static void javaTest3() {
+		char[] arr = new char[5];
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print("문자 입력 : ");
+			arr[i] = sc.next().charAt(0);
+		}
+		System.out.println(arr);
+
+		for (int i = arr.length - 1; i >= 0; i--) {
+			System.out.print(arr[i]);
 		}
 	}
 
