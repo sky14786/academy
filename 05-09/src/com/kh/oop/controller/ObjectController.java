@@ -10,4 +10,11 @@ public class ObjectController {
 	public void accessTest() {
 		member.printInfo();
 	}
+
+	public void initialBlock() {
+		Person p = new Person();
+		p.printPerson();
+		Person p1 = new Person();
+		p1.printPerson();
+	}
 }
