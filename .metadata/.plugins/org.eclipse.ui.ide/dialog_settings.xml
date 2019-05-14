@@ -4,4 +4,28 @@
 		<item value="D:\workspace\academy"/>
 		<item value="C:\Git\academy"/>
 	</list>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\June\Desktop\실기\javaTest1_서현희 (수정본)"/>
+			<item value="C:\Users\June\Desktop\실기\실기제출\Rclass_오전_김태진"/>
+			<item value="C:\Users\June\Desktop\실기\실기제출\javeTest1_남태관"/>
+			<item value="C:\Users\June\Desktop\실기\실기제출\Rclass_오전 전우현"/>
+			<item value="C:\Users\June\Desktop\실기\실기제출\Rclass 오전 정현빈"/>
+			<item value="C:\Users\June\Desktop\실기\실기제출\Rclass 오전 서선덕\javaTest1_서선덕"/>
+			<item value="C:\Users\June\Desktop\실기\실기제출\Rclass_오전_류별리"/>
+			<item value="C:\Users\June\Desktop\실기\실기제출\송주미"/>
+			<item value="C:\Git\academy\ex studentmanger"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
 </section>

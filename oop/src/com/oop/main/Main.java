@@ -1,13 +1,15 @@
-package com.kh.oop.main;
+package com.oop.main;
 
-import com.kh.oop.controller.ObjectController;
+import com.oop.controller.ObjectController;
 
 public class Main {
 
 	public static void main(String[] args) {
 		ObjectController oc = new ObjectController();
-//		oc.accessTest();
-		oc.constructorTest();
+		oc.accessTest();
+		
+		
+		
 	}
 
 }

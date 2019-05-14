@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="test.array.premitive.ArraySample"/>
 <fullyQualifiedTypeName name="test.array.permitive.ArraySample"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="logic.home.view.Menu"/>
 <fullyQualifiedTypeName name="logic.home.model.VariableSample"/>
@@ -31,11 +30,20 @@
 <fullyQualifiedTypeName name="logic.home.model.ContinueSample"/>
 <fullyQualifiedTypeName name="logic.home.model.StaticMethodSample"/>
 <fullyQualifiedTypeName name="logic.home.model.NonStaticMethodSample"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.kh.forinfor.controller.ForInForController"/>
 <fullyQualifiedTypeName name="com.kh.forinfor.controller.DoubleArrController"/>
 <fullyQualifiedTypeName name="com.kh.oop.model.vo.Car"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.kh.oop.model.vo.Member"/>
 <fullyQualifiedTypeName name="com.kh.oop.controller.ObjectController"/>
+<fullyQualifiedTypeName name="com.kh.oop.model.vo.Employee"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.student.view.MainMenu"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.student.model.vo.Student"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.student.controller.StudentController"/>
+<fullyQualifiedTypeName name="com.oop.model.vo.Animal"/>
+<fullyQualifiedTypeName name="com.oop.controller.ObjectController"/>
+<fullyQualifiedTypeName name="com.oop.model.vo.Bus"/>
 </qualifiedTypeNameHistroy>
