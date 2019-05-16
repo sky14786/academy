@@ -56,4 +56,18 @@ public class MethodTest {
 	public String combine(String msg, String msg2) {
 		return msg + msg2;
 	}
+
+	public int[] arrayReutrn() {
+		int[] arrInt = new int[5];
+		for (int i = 0; i < arrInt.length; i++) {
+			arrInt[i] = i * 10;
+		}
+		return arrInt;
+	}
+
+	public void intputArr(int[] copy) {
+		for (int i = 0; i < copy.length; i++) {
+			copy[i] = i * 20;
+		}
+	}
 }
