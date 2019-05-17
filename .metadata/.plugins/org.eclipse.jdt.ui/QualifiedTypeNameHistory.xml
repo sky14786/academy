@@ -41,7 +41,6 @@
 <fullyQualifiedTypeName name="com.student.view.MainMenu"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.student.model.vo.Student"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.student.controller.StudentController"/>
 <fullyQualifiedTypeName name="com.oop.model.vo.Animal"/>
 <fullyQualifiedTypeName name="com.oop.controller.ObjectController"/>
@@ -52,6 +51,12 @@
 <fullyQualifiedTypeName name="com.kh.model.vo.Employee"/>
 <fullyQualifiedTypeName name="com.kh.model.vo.Teacher"/>
 <fullyQualifiedTypeName name="com.kh.controller.Controller"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="com.kh.model.vo.Character"/>
+<fullyQualifiedTypeName name="com.kh.model.vo.Sword"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.kh.model.vo.Shield"/>
+<fullyQualifiedTypeName name="com.inter.model.inter.PrintDriver"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>
