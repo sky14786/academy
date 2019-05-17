@@ -13,9 +13,9 @@ public class Controller {
 		persons[1] = new Employee();
 		persons[2] = new Teacher();
 
-//		persons[0].print();
-//		persons[1].print();
-//		persons[2].print();
+		persons[0].print();
+		persons[1].print();
+		persons[2].print();
 //
 //		System.out.println(((Student) persons[0]).getGrade());
 //		System.out.println(((Student) persons[0]).getResult());

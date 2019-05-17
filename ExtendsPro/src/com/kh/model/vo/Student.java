@@ -35,4 +35,7 @@ public class Student extends Person {
 		super.print();
 		System.out.println(grade + result);
 	}
+
+
+
 }
