@@ -46,7 +46,6 @@
 <fullyQualifiedTypeName name="com.oop.controller.ObjectController"/>
 <fullyQualifiedTypeName name="com.oop.model.vo.Bus"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="com.kh.model.vo.Person"/>
 <fullyQualifiedTypeName name="com.kh.model.vo.Student"/>
 <fullyQualifiedTypeName name="com.kh.model.vo.Employee"/>
 <fullyQualifiedTypeName name="com.kh.model.vo.Teacher"/>
@@ -59,4 +58,5 @@
 <fullyQualifiedTypeName name="com.kh.model.vo.Shield"/>
 <fullyQualifiedTypeName name="com.inter.model.inter.PrintDriver"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.kh.model.vo.Person"/>
 </qualifiedTypeNameHistroy>
