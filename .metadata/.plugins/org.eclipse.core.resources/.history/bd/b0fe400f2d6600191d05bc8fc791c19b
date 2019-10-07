@@ -1,9 +1,0 @@
-package com.kh.day2;
-
-public class Run {
-
-	public static void main(String[] args) {
-		// 변수선언
-		// 메소드내부(중괄호 안), 클래스내부(중괄호 안)
-	}
-}
