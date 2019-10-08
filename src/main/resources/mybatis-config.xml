@@ -4,5 +4,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.kh.spring.demo.model.vo.Dev" alias="dev"/>
+		<typeAlias type="com.kh.spring.common.ArrayTypeHandler" alias="arrType"/>
 	</typeAliases>
 </configuration>

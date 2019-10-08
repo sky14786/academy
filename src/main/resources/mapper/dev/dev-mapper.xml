@@ -4,9 +4,18 @@
 <mapper namespace="dev">
 	<insert id="insertDev" parameterType="dev">
 		INSERT INTO DEV VALUES (seq_dev_no.nextval,#{devName},#{devAge},#{devEmail},#{devGender},
-			<foreach collection="devLang" item ="lang" separator="," open="'" close="'">
+			<!-- <foreach collection="devLang" item ="lang" separator="," open="'" close="'">
 				${lang}
-			</foreach>
+			</foreach> -->
+			#{devLang, typeHandler=com.kh.spring.common.ArrayTypeHandler}
 		)
 	</insert>
+	
+	<resultMap type="dev" id="devMap">
+		<result column="devLang" property="devLang" typeHandler="arrType"/>
+	</resultMap>
+	
+	<select id="selectDevList" resultMap="devMap">
+		SELECT * FROM DEV
+	</select>
 </mapper>

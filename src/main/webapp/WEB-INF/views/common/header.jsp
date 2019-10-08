@@ -37,7 +37,16 @@
 				<ul class="navbar-nav">
 			      <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}">Home</a></li>
 			      <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/board/boardList.do">게시판</a></li>
-			      <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/demo/demo.do">데모</a></li>
+			      <%-- <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/demo/demo.do">데모</a></li> --%>
+			      <li class="nav-item dropdown">
+   					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   				   Demo
+ 					</a>
+				   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				      <a class="dropdown-item" href="${pageContext.request.contextPath}/demo/demo.do">Dev 등록</a>
+				      <a class="dropdown-item" href="${pageContext.request.contextPath}/demo/selectDevList.do">Dev 목록</a>
+				   </div>
+				   </li>
 			    </ul>
 			 </div>
 		</nav>

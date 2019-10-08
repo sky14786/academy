@@ -1,6 +1,7 @@
 
 package com.kh.spring.demo.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,9 +19,9 @@ import com.kh.spring.demo.model.vo.Dev;
 @Controller
 //democontroller
 public class DemoController {
-	
+
 	@Autowired
-	DevService devService; 
+	DevService devService;
 
 	@RequestMapping("/demo/demo.do")
 	public String jangwon() {
@@ -96,11 +97,18 @@ public class DemoController {
 
 	@RequestMapping("/demo/insertDev.do")
 	public String insertDev(Dev dev) {
-		
+
 		int result = devService.insertDev(dev);
 		System.out.println("가입완료");
-		//redirect page change
+		// redirect page change
 		return "redirect:/";
+	}
+
+	@RequestMapping("/demo/selectDevList.do")
+	public String selectDevList(Model model) {
+		List<Dev> list = devService.selectDevList();
+		model.addAttribute("list", list);
+		return "demo/devList";
 	}
 
 }
