@@ -22,4 +22,10 @@ public class DevDaoImpl implements DevDao {
 		return session.selectList("dev.selectDevList");
 	}
 
+	@Override
+	public Dev selectDev(SqlSessionTemplate session, int devNo) {
+		return session.selectOne("dev.selectDev",devNo);
+	}
+
+
 }

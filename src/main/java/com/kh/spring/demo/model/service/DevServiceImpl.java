@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.kh.spring.demo.model.dao.DevDao;
 import com.kh.spring.demo.model.vo.Dev;
+import com.kh.spring.member.model.vo.Member;
 
 //devserviceimpl
 @Service
@@ -25,6 +26,16 @@ public class DevServiceImpl implements DevService {
 	@Override
 	public List<Dev> selectDevList() {
 		return dao.selectDevList(session);
+	}
+
+	@Override
+	public Dev selectDev(int devNo) {
+		return dao.selectDev(session,devNo);
+	}
+
+	@Override
+	public Member loginMember(String userId, String password) {
+		return null;
 	}
 
 }

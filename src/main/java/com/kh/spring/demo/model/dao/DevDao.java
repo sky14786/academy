@@ -12,4 +12,6 @@ public interface DevDao {
 	int insertDev(SqlSession session, Dev dev);
 
 	List<Dev> selectDevList(SqlSessionTemplate session);
+
+	Dev selectDev(SqlSessionTemplate session, int devNo);
 }

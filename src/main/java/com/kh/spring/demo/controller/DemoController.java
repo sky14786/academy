@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.kh.spring.demo.model.service.DevService;
 import com.kh.spring.demo.model.vo.Dev;
+import com.kh.spring.member.model.vo.Member;
 
 @Controller
 //democontroller
@@ -110,5 +111,14 @@ public class DemoController {
 		model.addAttribute("list", list);
 		return "demo/devList";
 	}
+	
+	@RequestMapping("/demo/updateDevTry")
+	public String updateDevTry(Model model,int devNo) {
+		Dev dev = devService.selectDev(devNo);
+		model.addAttribute("dev", dev);
+		return "";
+	}
+	
+	
 
 }
